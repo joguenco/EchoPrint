@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="EchoPrint.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="30"/>
+        <CursorPos X="17" Y="30"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/serverunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ServerUnit"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="6" Y="16"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/printerunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PrinterUnit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="113"/>
+        <CursorPos X="34" Y="132"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/rutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RUtils"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="13">
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="13" Column="30"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="184" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="src/printerunit.pas"/>
+        <Caret Line="131" TopLine="105"/>
+      </Position>
+      <Position>
+        <Filename Value="src/printerunit.pas"/>
+        <Caret Line="109" Column="31" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="156" Column="5" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="90" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="EchoPrint.lpr"/>
+        <Caret Line="38" Column="18" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="EchoPrint.lpr"/>
+        <Caret Line="51" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="25" Column="20" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="EchoPrint.lpr"/>
+        <Caret Line="12" Column="13"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="144" Column="30" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="115" Column="24" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="src/serverunit.pas"/>
+        <Caret Line="16" Column="22"/>
+      </Position>
+      <Position>
+        <Filename Value="src/printerunit.pas"/>
+        <Caret Line="13" TopLine="37"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

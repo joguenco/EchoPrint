@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/pos.svg" />
+  <link rel="stylesheet" href="/src/bulma-no-dark-mode.min.css" />
+  <link rel="stylesheet" href="/src/ticket.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Printer Web Client</title>
+</head>
+
+<body>
+  <div id="app">
+
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">Printer Web Client</a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-half">
+            <div class="card">
+              <p class="card-header-title">Ping</p>
+              <div class="card-content">
+                <div class="content">
+                  <button class="button is-info" id="pingButton">Ping</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <p class="card-header-title">Ticket Raw</p>
+              <div class="card-content">
+                <div class="content">
+                  <button class="button is-info" id="payButton">Pay</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modalPing" class="modal">
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+        <div class="box">
+          <div id="messagePing" class="has-text-centered"></div>
+        </div>
+      </div>
+
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <div id="modalTicket" class="modal">
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+        <div class="box">
+          <div id="ticket"></div>
+          <div id="messageTicket" class="has-text-centered"></div>
+        </div>
+      </div>
+    </div>
+
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
