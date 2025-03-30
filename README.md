@@ -2,6 +2,7 @@
 Pos Print Server
 
 REST API Server for print tickets in Point of Sale Printers
+
 ## Requirements
 - Set as default POS printer (USB, Network, LPT, Serial, Wifi)
 
@@ -11,7 +12,18 @@ REST API Server for print tickets in Point of Sale Printers
 
 ## Web Client
 - Vite
+- pnpm
 
-## Run
+## Run Server
 Compile and execute PrinterServer.exe or PrinterServer
 
+## Run Client
+```
+pnpm i
+```
+```
+pnpm run dev
+```
+
+## Thanks
+https://codepen.io/JewettCitySoftwareCorporation/pen/GLLBeG
