@@ -10,7 +10,7 @@ unit DaemonWorkerThread;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, ServerUnit;
 
   // --------------------------------------------------------------------------------
   // This is the "workhorse" of the daemon, and just a normal therad, see the Lazarus
@@ -48,6 +48,8 @@ begin
   while not Terminated do
   begin
     // placeholder, put your actual service code here
+
+    Server.Start;
     // ...
     LogToFile('Daemon worker thread running');
     // Thread- and CPUload friendly 5s delay loop
