@@ -14,7 +14,7 @@ interface
 
 uses
   Classes, SysUtils, Interfaces, fphttpapp, HTTPDefs, httproute,
-  fpjson, httpprotocol, PrinterUnit;
+  fpjson, httpprotocol, PrinterUnit, FileLoggerUnit;
 
 type
 
@@ -22,7 +22,8 @@ type
 
   TServer = class
   public
-    procedure Start;
+    procedure Start(Port: integer);
+    procedure Stop;
   private
     procedure Ping(Request: TRequest; Response: TResponse);
     procedure CatchAll(Request: TRequest; Response: TResponse);
@@ -36,17 +37,22 @@ var
 
 implementation
 
-procedure TServer.Start;
+procedure TServer.Start(Port: integer);
 begin
   HTTPRouter.BeforeRequest := @BeforeRequestHandler;
   HTTPRouter.RegisterRoute('/ping', rmGet, @Ping);
   HTTPRouter.RegisterRoute('/catchall', rmAll, @CatchAll, True);
   HTTPRouter.RegisterRoute('/print', rmPost, @TextArray);
-  Application.Port := 9090;
+  Application.Port := Port;
   Application.Initialize;
 
-  //WriteLn('[INFO] Server is ready at localhost: ' + IntToStr(Application.Port));
+  LogToFile('[INFO] Server is ready at localhost: ' + IntToStr(Application.Port));
   Application.Run;
+end;
+
+procedure TServer.Stop;
+begin
+  Application.Free;
 end;
 
 procedure TServer.Ping(Request: TRequest; Response: TResponse);
@@ -58,7 +64,7 @@ begin
   except
     on E: Exception do
     begin
-      //WriteLn('[ERROR] ' + E.Message);
+      LogToFile('[ERROR] ' + E.Message);
       Response.Content := '{"message":"' + E.Message + '"}';
       Response.Code := 500;
     end;
@@ -71,7 +77,8 @@ begin
   Response.ContentType := 'application/json';
   Response.ContentLength := Length(Response.Content);
   Response.SendContent;
-  //WriteLn('[INFO] Request GET to /ping and response status: ' + IntToStr(Response.Code));
+  LogToFile('[INFO] Request GET to /ping and response status: ' +
+    IntToStr(Response.Code));
 end;
 
 procedure TServer.TextArray(Request: TRequest; Response: TResponse);
@@ -87,7 +94,7 @@ begin
   except
     on E: Exception do
     begin
-      //WriteLn('[ERROR] ' + E.Message);
+      LogToFile('[ERROR] ' + E.Message);
       Response.Content := '{"message":"' + E.Message + '"}';
       Response.Code := 500;
     end;
@@ -100,8 +107,8 @@ begin
   Response.ContentType := 'application/json';
   Response.ContentLength := Length(Response.Content);
   Response.SendContent;
-  //WriteLn('[INFO] Request POST to /print/v1/text/array and response status: ' +
-  //  IntToStr(Response.Code));
+  LogToFile('[INFO] Request POST to /print and response status: ' +
+    IntToStr(Response.Code));
 end;
 
 procedure TServer.BeforeRequestHandler(Sender: TObject; Request: TRequest;
@@ -133,8 +140,8 @@ begin
   Response.ContentType := 'application/json';
   Response.ContentLength := Length(Response.Content);
   Response.SendContent;
-  //WriteLn('[WARN] Resource not available and response status: ' +
-    //IntToStr(Response.Code));
+  LogToFile('[WARN] Resource not available and response status: ' +
+    IntToStr(Response.Code));
 end;
 
 end.

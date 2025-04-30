@@ -25,9 +25,10 @@ uses
 type
   TWorkerThread = class(TThread)
   private
+    FPort: integer;
   public
     procedure Execute; override;  // the actual worker thread code goes here
-    constructor Create;
+    constructor Create(port: integer);
     destructor Destroy; override;
   end;
 
@@ -41,39 +42,30 @@ uses FileLoggerUnit;
   // --------------------------------------------------------------------------
 
 procedure TWorkerThread.Execute;
-var
-  i: integer;
 begin
   LogToFile('Daemon worker thread executing');
-  while not Terminated do
-  begin
-    // placeholder, put your actual service code here
-
-    Server.Start;
-    // ...
-    LogToFile('Daemon worker thread running');
-
-  end;
-  LogToFile('Daemon worker thread terminated');
+  Server.Start(FPort);
 end;
 
 // -------------------------------------------------
 // Construction and destruction of the worker thread
 // -------------------------------------------------
 
-constructor TWorkerThread.Create;
+constructor TWorkerThread.Create(port: integer);
 begin
   // Create a suspended worker thread to allow further parametrizon before it
   // does actually start
   // The thread will be started if the OS sends a "Start" Signal to TDaemon
   // See OnStart event handler of the TDeamon class
   inherited Create(True);
+  FPort := port;
   LogToFile('Daemon worker thread created');
 end;
 
 destructor TWorkerThread.Destroy;
 begin
   // Nothing to do here, just for logging
+  Server.Stop;
   LogToFile('Daemon worker thread destroyed');
   inherited Destroy;
 end;

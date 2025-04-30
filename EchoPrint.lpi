@@ -10,6 +10,8 @@
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
+        <TextName Value="Jorge Luis - joguenco.dev"/>
+        <TextDesc Value="Echo Print - REST API Server for print tickets in Point of Sale Printers"/>
       </XPManifest>
       <Icon Value="0"/>
     </General>

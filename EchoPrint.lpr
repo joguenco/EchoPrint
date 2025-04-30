@@ -13,11 +13,11 @@ uses
   Forms,
   EchoPrintUnit;
 
-  //{$R *.res}
+  {$R *.res}
 
 begin
   RequireDerivedFormResource := True;
-  Application.Scaled := True;
+  Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TEchoPrintForm, EchoPrintForm);
   Application.Run;

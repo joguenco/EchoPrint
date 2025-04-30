@@ -12,17 +12,16 @@ unit PrinterUnit;
 interface
 
 uses
-  Classes, SysUtils, Interfaces, Printers, OSPrinters, fpjson, RUtils;
+  Classes, SysUtils, Interfaces, Printers, OSPrinters, fpjson, RUtils, FileLoggerUnit;
 
 type
-
+  TCommand = (OpenCashDrawer, CutPaper);
   { TPrinterPos }
 
   TPrinterPos = class
   private
     procedure WriteString(S: string);
-    procedure OpenCashDrawer;
-    procedure CutPaper;
+    procedure EscPosCommand(command: TCommand);
     procedure Footer;
   public
     procedure Ping;
@@ -47,11 +46,11 @@ begin
   try
     RawMode := True;
     BeginDoc;
-    OpenCashDrawer;
+    EscPosCommand(OpenCashDrawer);
     WriteString('Pong' + LineEnding);
   finally
     Footer;
-    CutPaper;
+    EscPosCommand(CutPaper);
     EndDoc;
   end;
 
@@ -68,7 +67,7 @@ begin
   try
     RawMode := True;
     BeginDoc;
-    OpenCashDrawer;
+    EscPosCommand(OpenCashDrawer);
     for jEnum in jArray do
     begin
       jLine := jEnum.Value as TJSONObject;
@@ -76,46 +75,42 @@ begin
     end;
   finally
     Footer;
-    CutPaper;
+    EscPosCommand(CutPaper);
     EndDoc;
   end;
 end;
 
-procedure TPrinterPos.OpenCashDrawer;
+procedure TPrinterPos.EscPosCommand(command: TCommand);
+const
+  fileCutPaper: string = 'cutpaper.txt';
+  fileOpenCashDrawer: string = 'opencashdrawer.txt';
 var
+  fileCommand: string = '';
   prnfile: System.Text;
   buffer: string;
 begin
-  try
-    AssignFile(prnfile, 'opencashdrawer.txt');
-    Reset(prnfile);
 
-    while not EOF(prnfile) do
-    begin
-      Readln(prnfile, buffer);
-      WriteString(buffer);
-    end;
-
-  finally
-    CloseFile(prnfile);
+  case (command) of
+    CutPaper: fileCommand := fileCutPaper;
+    OpenCashDrawer: fileCommand := fileOpenCashDrawer;
   end;
-end;
 
-procedure TPrinterPos.CutPaper;
-var
-  prnfile: System.Text;
-  buffer: string;
-begin
   try
-    AssignFile(prnfile, 'cutpaper.txt');
-    Reset(prnfile);
+    try
+      AssignFile(prnfile, fileCommand);
+      Reset(prnfile);
 
-    while not EOF(prnfile) do
-    begin
-      Readln(prnfile, buffer);
-      WriteString(buffer);
+      while not EOF(prnfile) do
+      begin
+        Readln(prnfile, buffer);
+        WriteString(buffer);
+      end;
+    except
+      on E: Exception do
+      begin
+        LogToFile('[ERROR] ' + fileCommand + ' ' + E.Message);
+      end;
     end;
-
   finally
     CloseFile(prnfile);
   end;

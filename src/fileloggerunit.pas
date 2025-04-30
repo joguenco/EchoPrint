@@ -34,12 +34,21 @@ procedure LogToFile(aMessage: string);
     Result := FormatDateTime('hh:mm:ss', now) + ' ' + S;
   end;
 
+const
+  DirectorySeparator = '/';
+  LogDirectory = 'log';
 var
   f: Text;
   LogFilePath: string;
+  Name: string = 'EchoPrint-';
 begin
+  if not DirectoryExists(LogDirectory) then
+    CreateDir(LogDirectory);
+
   LogFilePath := IncludeTrailingPathDelimiter(ExtractFilePath(Application.ExeName)) +
+    LogDirectory + DirectorySeparator + Name +
     FormatDateTime('YYYYMMDD', now) + '.log';
+
   AssignFile(f, LogFilePath);
   try
     if FileExists(LogFilePath) then
