@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="EchoPrint.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="echoprintunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EchoPrintForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="EchoPrintUnit"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="21"/>
+        <CursorPos X="77" Y="41"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2021"/>
+        <CursorPos Y="2035"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="7">
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="11" Column="17"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="19" Column="16"/>
+      </Position>
+      <Position>
+        <Filename Value="EchoPrint.lpr"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="13" Column="51"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="2" Column="39"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="14" Column="61" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="30" Column="84" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="43" Column="26" TopLine="18"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
