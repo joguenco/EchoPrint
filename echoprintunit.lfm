@@ -1,21 +1,21 @@
 object EchoPrintForm: TEchoPrintForm
-  Left = 1853
-  Height = 600
-  Top = 244
-  Width = 900
+  Left = 1492
+  Height = 300
+  Top = 490
+  Width = 600
+  BorderIcons = [biSystemMenu]
   Caption = 'Echo Print'
-  ClientHeight = 600
-  ClientWidth = 900
-  DesignTimePPI = 153
+  ClientHeight = 300
+  ClientWidth = 600
   OnCreate = FormCreate
   Position = poDesktopCenter
   LCLVersion = '3.8.0.0'
   object ButHide: TButton
-    Left = 352
-    Height = 60
-    Top = 104
-    Width = 180
-    Caption = 'Ocultar'
+    Left = 472
+    Height = 38
+    Top = 248
+    Width = 113
+    Caption = '&Encubrir'
     TabOrder = 0
     OnClick = ButHideClick
   end
@@ -4191,7 +4191,7 @@ object EchoPrintForm: TEchoPrintForm
       00F00F0000
     }
     OnDblClick = TrayIconDblClick
-    Left = 374
-    Top = 298
+    Left = 8
+    Top = 264
   end
 end

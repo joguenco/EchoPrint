@@ -7,22 +7,47 @@
       <Unit>
         <Filename Value="EchoPrint.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="14"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="echoprintunit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EchoPrintForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="EchoPrintUnit"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="23" Y="45"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/rutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RUtils"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="7"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/printerunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PrinterUnit"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="44" Y="15"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/serverunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ServerUnit"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="21"/>
-        <CursorPos X="77" Y="41"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="18" Y="49"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/lcl/include/customform.inc"/>
@@ -31,38 +56,28 @@
         <CursorPos Y="2035"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="src/fileloggerunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FileLoggerUnit"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/workerthread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="WorkerThread"/>
+        <TopLine Value="19"/>
+        <CursorPos Y="55"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="7">
+    <JumpHistory>
       <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="11" Column="17"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="19" Column="16"/>
-      </Position>
-      <Position>
-        <Filename Value="EchoPrint.lpr"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="13" Column="51"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="2" Column="39"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="14" Column="61" TopLine="4"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="30" Column="84" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="43" Column="26" TopLine="18"/>
+        <Filename Value="src/workerthread.pas"/>
+        <Caret Line="26" Column="16" TopLine="19"/>
       </Position>
     </JumpHistory>
     <RunParams>

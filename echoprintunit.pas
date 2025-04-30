@@ -5,7 +5,8 @@ unit EchoPrintUnit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  WorkerThread;
 
 type
 
@@ -18,7 +19,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure TrayIconDblClick(Sender: TObject);
   private
-
+        FDaemonWorkerThread: TWorkerThread;
   public
 
   end;
@@ -41,6 +42,11 @@ end;
 procedure TEchoPrintForm.FormCreate(Sender: TObject);
 begin
   TrayIcon.Visible := False;
+   FDaemonWorkerThread := TWorkerThread.Create;
+  // Parametrize it
+  FDaemonWorkerThread.FreeOnTerminate := False;
+  // Start the worker
+  FDaemonWorkerThread.Start;
 end;
 
 procedure TEchoPrintForm.TrayIconDblClick(Sender: TObject);
