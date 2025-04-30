@@ -57,7 +57,7 @@ begin
   HTTPRouter.RegisterRoute('/catchall', rmAll, @CatchAll, True);
   HTTPRouter.RegisterRoute('/print', rmPost, @TextArray);
   Application.Port := 9090;
-  Application.Threaded := True;
+  //Application.Threaded := True;
   Application.Initialize;
 
   WriteLn('[INFO] Server is ready at localhost: ' + IntToStr(Application.Port));
