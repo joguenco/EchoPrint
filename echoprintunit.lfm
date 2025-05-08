@@ -1,48 +1,48 @@
 object EchoPrintForm: TEchoPrintForm
   Left = 815
-  Height = 478
+  Height = 717
   Top = 598
-  Width = 956
+  Width = 478
   BorderIcons = [biSystemMenu]
   Caption = 'Echo Print'
-  ClientHeight = 478
-  ClientWidth = 956
+  ClientHeight = 717
+  ClientWidth = 478
   DesignTimePPI = 153
+  Position = poDesktopCenter
   OnActivate = FormActivate
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  Position = poDesktopCenter
-  LCLVersion = '3.8.0.0'
   object ButHide: TButton
-    Left = 740
+    Left = 140
     Height = 72
-    Top = 306
+    Top = 293
     Width = 191
     Caption = '&Hide'
-    TabOrder = 0
+    TabOrder = 1
     OnClick = ButHideClick
   end
   object ButPing: TButton
-    Left = 26
+    Left = 140
     Height = 72
-    Top = 26
+    Top = 204
     Width = 191
     Caption = '&Ping'
-    TabOrder = 1
+    TabOrder = 0
     OnClick = ButPingClick
   end
   object lblMessageServer: TLabel
-    Left = 217
+    Left = 26
     Height = 36
-    Top = 178
-    Width = 307
+    Top = 26
+    Width = 324
     Caption = 'Print Server runs on port '
+    Font.Style = [fsBold]
     ParentFont = False
   end
   object lblLinkGitHub: TLabel
     Left = 26
     Height = 36
-    Top = 406
+    Top = 663
     Width = 621
     Caption = 'https://github.com/joguenco/EchoPrint/tree/gui'
     Color = clNone
@@ -1531,7 +1531,7 @@ object EchoPrintForm: TEchoPrintForm
       0000
     }
     OnDblClick = TrayIconDblClick
-    Left = 893
+    Left = 421
     Top = 13
   end
 end

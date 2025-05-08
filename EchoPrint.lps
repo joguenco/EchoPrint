@@ -9,7 +9,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="17" Y="14"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="33"/>
       </Unit>
       <Unit>
         <Filename Value="echoprintunit.pas"/>
@@ -19,9 +19,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="EchoPrintUnit"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="63"/>
-        <CursorPos X="30" Y="83"/>
-        <UsageCount Value="31"/>
+        <TopLine Value="115"/>
+        <CursorPos X="5" Y="86"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,7 +32,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
         <CursorPos X="19" Y="26"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="33"/>
       </Unit>
       <Unit>
         <Filename Value="src/printerunit.pas"/>
@@ -41,7 +41,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="104"/>
         <CursorPos X="10" Y="114"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="33"/>
       </Unit>
       <Unit>
         <Filename Value="src/serverunit.pas"/>
@@ -50,7 +50,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="123"/>
         <CursorPos X="49" Y="25"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="33"/>
       </Unit>
       <Unit>
         <Filename Value="src/fileloggerunit.pas"/>
@@ -59,7 +59,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="14"/>
         <CursorPos X="20" Y="14"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="32"/>
       </Unit>
       <Unit>
         <Filename Value="src/workerthread.pas"/>
@@ -68,14 +68,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos X="20" Y="28"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="31"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/lcl/include/customform.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="2021"/>
-        <CursorPos Y="2035"/>
-        <UsageCount Value="9"/>
+        <TopLine Value="2139"/>
+        <CursorPos Y="2145"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-extra/src/daemonapp.pp"/>
@@ -119,71 +119,7 @@
         <UsageCount Value="9"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="26">
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="10" Column="23"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="49" Column="6" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="58" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="59" Column="64" TopLine="49"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="62" Column="15" TopLine="48"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="63" Column="3" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="55" Column="49"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="37" Column="17" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="36" Column="17" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="37" Column="17" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="36" Column="17" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="75" Column="20" TopLine="64"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="68" Column="68" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="79" Column="54" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="82" Column="45" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="echoprintunit.pas"/>
-        <Caret Line="79" Column="52" TopLine="62"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="echoprintunit.pas"/>
         <Caret Line="56" Column="73" TopLine="42"/>
@@ -227,6 +163,82 @@
       <Position>
         <Filename Value="echoprintunit.pas"/>
         <Caret Line="117" Column="35" TopLine="98"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="109" Column="50" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="24" Column="15" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="84" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="92" Column="28" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="51" Column="28" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="90" Column="61" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="93" Column="25" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="50" Column="31" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="52" Column="15" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="25" Column="15" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="49" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="51" Column="9" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="52" Column="31" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="54" Column="26" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="53" Column="19" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="55" Column="33" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="53" Column="23" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="57" Column="17" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="echoprintunit.pas"/>
+        <Caret Line="102" Column="6" TopLine="92"/>
       </Position>
     </JumpHistory>
     <RunParams>
