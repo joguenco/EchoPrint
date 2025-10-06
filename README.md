@@ -3,9 +3,8 @@ Pos Print Server
 
 REST API Server for print tickets in Point of Sale Printers
 ## Video
-```
 https://www.youtube.com/watch?v=dnT3n_ltbKk
-```
+
 ## Requirements
 - Set as default POS printer (USB, Network, LPT, Serial, Wifi)
 
