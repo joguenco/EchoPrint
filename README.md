@@ -19,6 +19,12 @@ https://www.youtube.com/watch?v=dnT3n_ltbKk
 ## Run Server
 Compile and execute PrinterServer.exe or PrinterServer
 
+### (Windows) Execute the next command and copy shortcut in opened folder
+```
+shell:startup
+```
+This application run in system tray icons (In clock section)
+
 ## Run Client
 ```
 pnpm i
